@@ -8,7 +8,7 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
-        stage('DeployToStaging') {
+     /*   stage('DeployToStaging') {
             when {
                 branch 'master'
             }
@@ -36,8 +36,29 @@ pipeline {
                         ]
                     )
                 }
+            }*/
+        
+        
+           steps {
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker_hub_log') {
+                        app.push("${env.BUILD_NUMBER}")
+                        app.push("latest")
+                    }
+                }
             }
         }
+        
+        
+        
+        }
+    
+    
+    
+    
+        
+        
+        
         
     }
 }
