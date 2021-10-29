@@ -1,0 +1,9 @@
+install publish over ssh plugin in jenkins
+add a global variable 
+add ssh server 
+add credentials (git , docker , production server ) 
+install pass ssh plugin 
+generate git api and add it in the github section in jenkins global config 
+
+
+
