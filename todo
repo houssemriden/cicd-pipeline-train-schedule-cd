@@ -7,3 +7,21 @@ generate git api and add it in the github section in jenkins global config
 
 
 
+KUBERNETS CLUSTER SETUP : 
+
+
+dockerio 
+kublet
+kubeadm
+kubectl 
+those 4 packages must be installed then we create a config file yml 
+then we run kubeadm init --config filename . 
+
+next we must configure networking using flannel 
+
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml 
+and finally we link the master node with the rest of the nodes using the command 
+
+
+
+
