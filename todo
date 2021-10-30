@@ -24,4 +24,16 @@ and finally we link the master node with the rest of the nodes using the command
 
 
 
+DEPLOY USING KUBE/JENKINS : 
+INSTALL CONTINIOUS DEPLOY PLUGING FOR KUBERNETES.
+set up kube cred  (so that jenkins login , KUBECONFIG AS KIND , get the content of the kubeconfig from the master  )
+kube allow us to create yaml file in order to define kube obejct 
+next we create train-kube.yml where we going to define our kube objects .
+then we add the pipelines scripts in the jenkins file . 
+
+
+
+
+
+
 
